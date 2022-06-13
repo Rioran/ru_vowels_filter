@@ -21,16 +21,18 @@
         <div class="p-5">
             <label for="text_input" class="pb-5">Введите текст:<br></label>
             <textarea type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">
-                Что будем чистить? Останутся только гласные.
-            </textarea>
+                Что будем чистить? Останутся только гласные.</textarea>
         </div>
         <div class="ps-5">
-            <button type="button" onclick="filter_vowels();">
-                Оставить гласные
+            <button type="button" onclick="filter_vowels(/[^аеёиоуэюяы]/gi);">
+                Оставить только гласные
+            </button>
+            <button type="button" onclick="filter_vowels(/[^аеёиоуэюяы .,-!?]/gi);">
+                Оставить ещё и .,-!?
             </button>
         </div>
         <div id="text_output" class="p-5">
-            Здесь будет текст после фильтрации. 1
+            Здесь будет текст после фильтрации. 3
         </div>
         <script src="js/scripts.js"></script>
     </body>
