@@ -23,15 +23,15 @@
             <textarea type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
         </div>
         <div class="ps-5">
-            <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);">
+            <button type="button" onclick="filter_text('[^аеёиоуэюяы]gi');">
                 Оставить только гласные
             </button>
-            <button type="button" onclick="filter_text(/[^аеёиоуэюяы .,-!?]/gi);">
+            <button type="button" onclick="filter_text('[^аеёиоуэюяы .,-!?]gi');" class="ps-5">
                 Оставить ещё и .,-!?
             </button>
         </div>
         <div id="text_output" class="p-5">
-            Здесь будет текст после фильтрации. 5
+            Здесь будет текст после фильтрации. Версия 6 - фикс регулярки
         </div>
         <script src="js/scripts.js"></script>
     </body>
