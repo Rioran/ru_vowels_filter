@@ -18,18 +18,16 @@
         <meta property="og:image" content="images/og_image.png">
     </head>
     <body>
-        <div class="container-fluid m-5">
+        <div class="container-fluid p-5">
             <div class="row">
-                <div class="pb-5">
-                    <label for="text_input">Введите текст:</label>
-                    <textarea type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
-                </div>
+                <label class="pb-5" for="text_input">Введите текст:</label>
+                <textarea class="pb-5" type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
             </div>
             <div class="row align-items-center">
-                <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);" class="col m-5">
+                <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);" class="col p-3">
                     Оставить только гласные
                 </button>
-                <button type="button" onclick="filter_text(/[^аеёиоуэюяы \.\,\-\!\?]/gi);" class="col m-5">
+                <button type="button" onclick="filter_text(/[^аеёиоуэюяы \.\,\-\!\?]/gi);" class="col p-3">
                     Оставить ещё и .,-!?
                 </button>
             </div>
