@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Фильтр для гласных</title>
+        <meta name="description" content="RU Vowels Filter">
+        <meta name="author" content="Roman 'Rioran' Voronov">
+
+        <meta property="og:title" content="RU Vowels Filter">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://rioran.github.io/ru-vowels-filter/main">
+        <meta property="og:description" content="RU Vowels Filter">
+        <meta property="og:image" content="images/og_image.png">
+    </head>
+    <body>
+        <div>
+            <label for="text_input">Введите текст:</label>
+            <input type="text" id="text_input" name="text_input" required>
+        </div>
+        <div>
+            <button type="button" onclick="filter_vowels();">
+                Оставить гласные
+            </button>
+        </div>
+        <div id="text_output">
+            Здесь будет текст после фильтрации.
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
