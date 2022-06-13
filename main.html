@@ -25,17 +25,17 @@
                     <textarea type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
                 </div>
             </div>
-            <div class="row ps-5">
-                <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);" class="col-6">
+            <div class="row p-3">
+                <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);" class="col-6 m-2 mh-10">
                     Оставить только гласные
                 </button>
-                <button type="button" onclick="filter_text(/[^аеёиоуэюяы \.\,\-\!\?]/gi);" class="col-6">
+                <button type="button" onclick="filter_text(/[^аеёиоуэюяы \.\,\-\!\?]/gi);" class="col-6 m-2 mh-10">
                     Оставить ещё и .,-!?
                 </button>
             </div>
             <div class="row">
-                <div id="text_output" class="p-5 text-wrap">
-                    Здесь будет текст после фильтрации. Версия 11 - row fix
+                <div id="text_output" class="p-5 text-wrap text-break">
+                    Здесь будет текст после фильтрации. Версия 12 - row padding + margin
                 </div>
             </div>
         </div>
