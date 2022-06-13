@@ -19,20 +19,26 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="p-5">
-                <label for="text_input" class="pb-5">Введите текст:<br></label>
-                <textarea type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
+            <div class="row">
+                <div class="p-5">
+                    <label for="text_input" class="pb-5">Введите текст:<br></label>
+                    <textarea type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
+                </div>
             </div>
-            <div class="ps-5">
-                <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);" class="col-6">
-                    Оставить только гласные
-                </button>
-                <button type="button" onclick="filter_text(/[^аеёиоуэюяы .,-!?]/gi);" class="col-6">
-                    Оставить ещё и .,-!?
-                </button>
+            <div class="row">
+                <div class="ps-5">
+                    <button type="button" onclick="filter_text(/[^аеёиоуэюяы]/gi);" class="col-6">
+                        Оставить только гласные
+                    </button>
+                    <button type="button" onclick="filter_text(/[^аеёиоуэюяы \.\,\-\!\?]/gi);" class="col-6">
+                        Оставить ещё и .,-!?
+                    </button>
+                </div>
             </div>
-            <div id="text_output" class="p-5 text-wrap">
-                Здесь будет текст после фильтрации. Версия 8 - ровности
+            <div class="row">
+                <div id="text_output" class="p-5 text-wrap">
+                    Здесь будет текст после фильтрации. Версия 10 - плюс строки
+                </div>
             </div>
         </div>
         <script src="js/scripts.js"></script>
