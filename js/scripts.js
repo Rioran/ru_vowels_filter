@@ -5,8 +5,6 @@ function filter_text(expression) {
 }
 
 function copy_output() {
-    var text_to_copy = document.getElementById("text_output");
-    text_to_copy.select();
-    text_to_copy.setSelectionRange(0, 99999);
+    const text_to_copy = document.getElementById("text_output");
     navigator.clipboard.writeText(text_to_copy.value);
   }
