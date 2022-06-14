@@ -4,7 +4,8 @@ function filter_text(expression) {
     output_div.innerText = input_text.replace(expression, "").toLowerCase();
 }
 
-function copy_output() {
-    const text_to_copy = document.getElementById("text_output");
-    navigator.clipboard.writeText(text_to_copy.value);
+function select_output() {
+    window.getSelection().selectAllChildren(
+        document.getElementById("text_output")
+    );
   }
