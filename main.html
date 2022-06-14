@@ -24,13 +24,13 @@
                 <textarea class="m-3 col" type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Что будем чистить? Останутся только гласные.</textarea>
             </div>
             <div class="row align-items-center pb-3">
-                <button type="button" class="btn btn-primary col p-3 m-3 h4" onclick="filter_text(/[^аеёиоуэюяы]/gi);">
+                <button type="button" class="btn btn-primary col p-3 m-3 h4" onclick="filter_text(/[^аеёиоуэюяы\n]/gi);">
                     Оставить только гласные
                 </button>
-                <button type="button" class="btn btn-primary col p-3 m-3 h4" onclick="filter_text(/[^аеёиоуэюяы ]/gi);">
+                <button type="button" class="btn btn-primary col p-3 m-3 h4" onclick="filter_text(/[^аеёиоуэюяы\n ]/gi);">
                     Ну и ещё пробелы
                 </button>
-                <button type="button" class="btn btn-primary col p-3 m-3 h4" onclick="filter_text(/[^аеёиоуэюяы \.\,\-\!\?]/gi);">
+                <button type="button" class="btn btn-primary col p-3 m-3 h4" onclick="filter_text(/[^аеёиоуэюяы\n \.\,\-\!\?]/gi);">
                     Оставить ещё и .,-!?
                 </button>
                 <button type="button" class="btn btn-success col p-3 m-3 h4" onclick="select_output();">
